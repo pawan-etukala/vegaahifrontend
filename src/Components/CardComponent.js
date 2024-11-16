@@ -14,7 +14,8 @@ const CardComponent = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
+       <h1 className="text-center">Course Content</h1>
       <div className="row">
         {[
           { title: "LEVEL-1 Basic Programming", img: BasicprogrammingImage, path: "/basic-programming", text: "Welcome to the Basic Programming course!" },

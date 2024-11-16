@@ -2,7 +2,7 @@ import React from 'react';
 
 const Programming = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       <h2 className="text-center">Programming Courses</h2>
       <table className="table table text-center table-bordered table-striped">
         <thead>

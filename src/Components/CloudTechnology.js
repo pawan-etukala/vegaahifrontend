@@ -2,7 +2,7 @@ import React from 'react';
 
 const CloudTechnology = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       <h2 className="text-center">Cloud Technology Courses</h2>
       <table className="table  table text-center table-bordered table-striped">
         <thead>

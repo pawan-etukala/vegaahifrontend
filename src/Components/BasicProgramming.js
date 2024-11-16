@@ -2,7 +2,7 @@ import React from 'react';
 
 const BasicProgramming = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       <h2 className="text-center">Basic Programming Courses</h2>
       <div className="d-flex justify-content-center">
         <table className="table text-center table-bordered table-striped">

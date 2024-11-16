@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testing = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       <h2 className="text-center">Testing Courses</h2>
       <table className="table table text-center table-bordered table-striped">
         <thead>
