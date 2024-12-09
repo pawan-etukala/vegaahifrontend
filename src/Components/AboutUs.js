@@ -10,7 +10,7 @@ import Saikrishna from "../Assests/saikrishna_img.jpg";
 import Bharath from "../Assests/bharath_img.jpeg";
 import Ramesh from "../Assests/ramesh.jpg";
 // import slide1 from "../Assests/slide1.jpeg";
-import lavanya from "../Assests/lavanaya.jpg";
+import lavanya from "../Assests/lavanya.jpg";
 import sandeep from "../Assests//sandeep.jpg";
 import EmployeeCard from "./EmployeeCard";
 const AboutUs = () => {

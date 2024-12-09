@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../css/ContactUs.css";
+import Swal from "sweetalert";
+import axios from "axios";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,8 @@ const ContactUs = () => {
     txtMsg: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -17,9 +21,42 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+
+    setIsSubmitting(true);
+
+    // Web3Forms endpoint and Access Key
+    const endpoint = "https://api.web3forms.com/submit";
+    const accessKey = "0c5d4a8f-1122-4a77-909a-5e8b9dad6b13"; // Replace with your actual access key
+
+    try {
+      const response = await axios.post(endpoint, {
+        access_key: accessKey,
+        name: formData.txtName,
+        email: formData.txtEmail,
+        phone: formData.txtPhone,
+        message: formData.txtMsg,
+        subject: "New Contact Form Submission",
+      });
+
+      if (response.status === 200) {
+        Swal("Success!", "Your message has been sent successfully.", "success");
+        setFormData({
+          txtName: "",
+          txtEmail: "",
+          txtPhone: "",
+          txtMsg: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      Swal("Error!", "Failed to send your message. Please try again later.", "error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -69,8 +106,8 @@ const ContactUs = () => {
                 />
               </div>
               <div className="form-group">
-                <button type="submit" className="btnContact">
-                  Send Message
+                <button type="submit" className="btnContact" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </div>
             </div>

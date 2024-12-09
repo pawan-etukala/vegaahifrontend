@@ -78,7 +78,4 @@
     background: linear-gradient(45deg, #ff869a, #FF5370);
   }
   
-  Optional: Change icon color on hover
-  .cardd:hover .icon {
-    color: #fff; /* Change icon color on hover */
-  }
+  

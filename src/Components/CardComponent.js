@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import BasicprogrammingImage from '../Assests/BasicProgramming.jpg';
 import programmingImage from '../Assests/programming.jpg';
 import Designing from '../Assests/designing.jpg';
@@ -32,16 +33,15 @@ const CardComponent = () => {
           style={{
             gap: '16px',
             paddingBottom: '16px',
-            scrollbarWidth: 'none', // Hides scrollbar in Firefox
-            msOverflowStyle: 'none', // Hides scrollbar in IE and Edge
-            position: 'relative', // To position the buttons inside the container
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            position: 'relative',
           }}
         >
-          {/* For hiding scrollbar in modern browsers */}
           <style>
             {`
               ::-webkit-scrollbar {
-                display: none; /* Hides scrollbar for Chrome, Safari, and Opera */
+                display: none;
               }
               .card:hover {
                 transform: scale(1.05);
@@ -55,7 +55,7 @@ const CardComponent = () => {
             { title: "LEVEL-2 Programming", img: programmingImage, path: "/programming", text: "Welcome to the Programming course!" },
             { title: "LEVEL-3 Designing", img: Designing, path: "/designing", text: "Welcome to the Designing course! Add color to your journey and start blooming like a flower on earth." },
             { title: "LEVEL-4 Testing", img: Testing, path: "/testing", text: "Welcome to the Testing course! Add color to your journey and start blooming like a flower." },
-            { title: "LEVEL-5 Cloud Technology", img: Cloud, path: "/cloud-technology", text: "Welcome to the Cloud Technology course!" }
+            { title: "LEVEL-5 Cloud Technology", img: Cloud, path: "/cloud-technology", text: "Welcome to the Cloud Technology course!" },
           ].map((card, index) => (
             <div className="card" key={index} style={{ width: '100%', maxWidth: '18rem', flexShrink: 0 }}>
               <img
@@ -63,7 +63,7 @@ const CardComponent = () => {
                 className="card-img-top"
                 alt={card.title}
                 style={{
-                  height: '160px', // Reduced height to 80% of the original (200px * 0.8)
+                  height: '160px',
                   objectFit: 'cover',
                 }}
               />
@@ -80,40 +80,38 @@ const CardComponent = () => {
 
         {/* Left Scroll Button */}
         <button
-          className="btn btn-light position-absolute rounded-circle"
+          className="btn btn-light position-absolute rounded-circle d-flex align-items-center justify-content-center"
           style={{
             top: '50%',
             left: '10px',
             transform: 'translateY(-50%)',
             zIndex: 1,
-            padding: '10px',
+            width: '40px',
+            height: '40px',
             fontSize: '20px',
-            background: 'transparent',
-            color: 'blue',
-            border: 'none',
+            boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.2)',
           }}
           onClick={() => scroll('left')}
         >
-          &lt;
+          <FaAngleLeft />
         </button>
 
         {/* Right Scroll Button */}
         <button
-          className="btn btn-light position-absolute rounded-circle"
+          className="btn btn-light position-absolute rounded-circle d-flex align-items-center justify-content-center"
           style={{
             top: '50%',
             right: '10px',
             transform: 'translateY(-50%)',
             zIndex: 1,
-            padding: '10px',
+            width: '40px',
+            height: '40px',
             fontSize: '20px',
-            background: 'transparent',
-            color: 'blue',
-            border: 'none',
+            boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.2)',
           }}
           onClick={() => scroll('right')}
         >
-          &gt;
+          <FaAngleRight />
         </button>
       </div>
     </div>

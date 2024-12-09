@@ -70,3 +70,29 @@
   background-color: #0056b3;
   box-shadow: 0 4px 10px rgba(0, 98, 204, 0.3);
 }
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .contact-us-container .contact-form {
+    width: 90%; /* Increase width on small screens */
+    padding: 20px;
+  }
+
+  .contact-us-container .contact-form .form-group {
+    margin-bottom: 10px; /* Reduce space between input fields */
+  }
+
+  .contact-us-container .contact-form .form-control {
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  /* Adjust the spacing between the textarea and the button */
+  .contact-us-container .contact-form .btnContact {
+    margin-top: 20px; /* Add space between the message box and the button */
+  }
+
+  .contact-us-container .contact-image img {
+    width: 60px; /* Adjust image size */
+    margin-top: -50px; /* Adjust image position */
+  }
+}

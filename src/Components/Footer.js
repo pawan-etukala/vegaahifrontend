@@ -53,9 +53,11 @@ const Footer = () => {
             <address>
               Sai Pooja Complex, 1st Floor<br />
               Beside Big-C, Kishanpura<br />
-              Hanamkonda, Warangal, Telangana 12345<br />
-              Email: <a href="mailto:vegaahiitpvt.ltd@vegaahi.com" className="text-white">vegaahiitpvt.ltd@vegaahi.com</a><br />
-              Phone: <a href="tel:9948457532" className="text-white">9948457532</a>
+              Hanamkonda, Warangal, Telangana 506001<br />
+              Email: <a href="mailto:vegaahiitpvt.ltd@vegaahi.com" className="text-white">vegaahiitpvt.ltd@vegaahi.com</a>
+              , <a href="mailto:vegaahiit@gmail.com" className="text-white">vegaahiit@gmail.com</a><br />
+              Phone: <a href="tel:9494579988" className="text-white">9494579988</a><br></br>
+              <a href="tel:9494569988" className="text-white">9494569988</a>
             </address>
           </div>
 
