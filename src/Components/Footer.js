@@ -14,6 +14,7 @@ const Footer = () => {
               <li><Link to="/trainings" className="text-white">Training</Link></li>
               <li><Link to="/acadamicprojects" className="text-white">Academic Projects</Link></li>
               <li><Link to="/publications" className="text-white">Publications</Link></li>
+              <li><Link to="/" className="text-white"> Go to Home page</Link></li>
             </ul>
           </div>
           
@@ -21,7 +22,7 @@ const Footer = () => {
           <div className="col-12 col-md-2 mb-4 mb-md-0">
             <h5>Service</h5>
             <ul className="list-unstyled">
-              <li><Link to="/educationalclinets" className="text-white">Educational Clients</Link></li>
+              <li><Link to="/testimonaials" className="text-white">Educational Clients</Link></li>
               <li><Link to="/developmentclients" className="text-white">Development Clients</Link></li>
             </ul>
           </div>
@@ -42,7 +43,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li><Link to="/jobs" className="text-white">Job Openings</Link></li>
               <li><Link to="/internships" className="text-white">Internship Opportunities</Link></li>
-              <li><Link to="/apply" className="text-white">Apply Now</Link></li>
+              {/* <li><Link to="/apply" className="text-white">Apply Now</Link></li> */}
               <li><Link to="/lifeatvegaahi" className="text-white">Life at Vegaahi</Link></li>
             </ul>
           </div>

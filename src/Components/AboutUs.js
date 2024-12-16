@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaPencilAlt, FaChartBar, FaDatabase } from "react-icons/fa";
 import mission from "../Assests/Mission.jpeg";
 import vision from "../Assests/vision.jpeg";
-import pawan from "../Assests/pawan_img.png";
+import pawan from "../Assests/pawan3.jpg";
 import sahit from "../Assests/sahith.jpg";
-import saipavan from "../Assests/saipavan_img.jpg";
+import saipavan from "../Assests/saipavan2.jpg";
 import Saikrishna from "../Assests/saikrishna_img.jpg";
 import Bharath from "../Assests/bharath_img.jpeg";
 import Ramesh from "../Assests/ramesh.jpg";
@@ -76,7 +76,7 @@ const AboutUs = () => {
       title: "Software Engineer",
       name: "Sai pavan Koudagani",
       description:
-        '"A software engineer crafts the backbone of technology, transforming complex problems into elegant, functional solutions that shape the future.',
+        '"Proficient in analyzing complex technical requirements, optimizing system performance, and integrating innovative solutions to enhance reliability and efficiency."',
       about:
         "Experienced in building scalable backend services with Node.js, Express, and MongoDB. Loves solving complex problems and integrating APIs.",
     },

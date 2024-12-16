@@ -15,7 +15,7 @@ const LandingPage = () => {
          <Banner/>
          <Banner2/>
         <Timeline/>
-        <Testimonial/>
+        <Testimonial />
     </div>
   )
 }

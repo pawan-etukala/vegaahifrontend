@@ -22,6 +22,14 @@ import Carriers from "./Components/Carriers";
 import EducationalClinets from "./Components/EducationalClinets";
 import Developmentclients from "./Components/DevelopmentClients";
 import AcadamicProjectCard from "./Components/AcadamicProjectCard";
+import Jobs from "./Components/Jobs";
+import Apply from "./Components/Apply";
+import Publications from "./Components/Publications";
+import LatestNews from "./Components/LatestNews";
+import Updates from "./Components/Updates";
+import Turorials from "./Components/Tutorials";
+import Tutorials from "./Components/Tutorials";
+import Testimonial from "./Components/Testimonial";
 
 
 // import CarouselComponent from "./Components/CarouselComponent";
@@ -52,7 +60,13 @@ function App() {
           <Route path="lifeatvegaahi" element={<LifeAtVegaahi/>} />
           <Route path="educationalclients" element={<EducationalClinets/>} />
           <Route path="developmentclients" element={<Developmentclients/>} />
-          
+          <Route path="jobs" element={<Jobs/>} />
+          <Route path="publications" element={<Publications/>} />
+          <Route path="latestnews" element={<LatestNews/>} />
+          <Route path="updates" element={<Updates/>} />
+          <Route path="tutorials" element={<Tutorials/>} />
+          <Route path="testimonaials" element={<Testimonial/>} />
+          <Route path="/apply/:jobId" element={<Apply />} />
         </Routes>
         
        

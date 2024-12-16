@@ -38,7 +38,7 @@ function Testimonial() {
 
   return (
     <div className="testimonial-container m-3">
-      <h2 className=" font-weight-bold ">Our Clients</h2>
+      <h2 className=" font-weight-bold ">Our Educational Clients</h2>
       <div className="testimonial p-3">
         {clients.map((client) => (
           <div key={client.id} className="testimonial-content">
