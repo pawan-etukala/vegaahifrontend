@@ -7,7 +7,7 @@ import '../css/Navbar.css'; // Import the custom CSS file
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary px-3 py-2">
+    <nav className="navbar navbar-expand-lg bg-secondary px-3 py-2" id="nav">
       <div className="container-fluid d-flex align-items-center">
         {/* Left Section: Logo and Title */}
         <div className="d-flex align-items-center">

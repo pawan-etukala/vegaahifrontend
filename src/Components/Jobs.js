@@ -18,7 +18,7 @@ const Job = () => {
   return (
     <div className="container my-5">
       <h2 className="text-center mb-4">Job Openings</h2>
-      <div className="list-group">
+      {/* <div className="list-group">
         {jobData.map((job) => (
           <div key={job.id} className="list-group-item mb-3">
             <h5 className="mb-2">{job.title}</h5>
@@ -28,7 +28,8 @@ const Job = () => {
             <button onClick={() => handleApplyClick(job)} className="btn btn-primary">Apply Now</button>
           </div>
         ))}
-      </div>
+      </div> */}
+      currently we are not hiring..! Please check back later.
     </div>
   );
 };

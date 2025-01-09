@@ -30,6 +30,11 @@ import Updates from "./Components/Updates";
 import Turorials from "./Components/Tutorials";
 import Tutorials from "./Components/Tutorials";
 import Testimonial from "./Components/Testimonial";
+import Level1 from "./Components/Level1";
+import Level2 from "./Components/Level2";
+import Level3 from "./Components/Level3";
+import Level4 from "./Components/Level4";
+import Level5 from "./Components/Level5";
 
 
 // import CarouselComponent from "./Components/CarouselComponent";
@@ -66,6 +71,11 @@ function App() {
           <Route path="updates" element={<Updates/>} />
           <Route path="tutorials" element={<Tutorials/>} />
           <Route path="testimonaials" element={<Testimonial/>} />
+          <Route path="level1" element={<Level1/>} />
+          <Route path="level2" element={<Level2/>} />
+          <Route path="level3" element={<Level3/>} />
+          <Route path="level4" element={<Level4/>} />
+          <Route path="level5" element={<Level5/>} />
           <Route path="/apply/:jobId" element={<Apply />} />
         </Routes>
         

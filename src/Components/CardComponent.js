@@ -13,6 +13,7 @@ const CardComponent = () => {
 
   const handleCardClick = (path) => {
     navigate(path);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // This ensures the page scrolls to the top
   };
 
   const scroll = (direction) => {
@@ -50,12 +51,12 @@ const CardComponent = () => {
               }
             `}
           </style>
-          {[
-            { title: "LEVEL-1 Basic Programming", img: BasicprogrammingImage, path: "/trainings", text: "Welcome to the Basic Programming course!" },
-            { title: "LEVEL-2 Programming", img: programmingImage, path: "/trainings", text: "Welcome to the Programming course!" },
-            { title: "LEVEL-3 Designing", img: Designing, path: "/trainings", text: "Welcome to the Designing course! Add color to your journey and start blooming like a flower on earth." },
-            { title: "LEVEL-4 Testing", img: Testing, path: "/trainings", text: "Welcome to the Testing course! Add color to your journey and start blooming like a flower." },
-            { title: "LEVEL-5 Cloud Technology", img: Cloud, path: "/trainings", text: "Welcome to the Cloud Technology course!" },
+          {[ 
+            { title: "LEVEL-1 Basic Programming", img: BasicprogrammingImage, path: "/level1", text: "Welcome to the Basic Programming course!" },
+            { title: "LEVEL-2 Programming", img: programmingImage, path: "/level2", text: "Welcome to the Programming course!" },
+            { title: "LEVEL-3 Designing", img: Designing, path: "/level3", text: "Welcome to the Designing course! Add color to your journey and start blooming like a flower on earth." },
+            { title: "LEVEL-4 Testing", img: Testing, path: "/level4", text: "Welcome to the Testing course! Add color to your journey and start blooming like a flower." },
+            { title: "LEVEL-5 Cloud Technology", img: Cloud, path: "/level5", text: "Welcome to the Cloud Technology course!" },
           ].map((card, index) => (
             <div className="card" key={index} style={{ width: '100%', maxWidth: '18rem', flexShrink: 0 }}>
               <img

@@ -15,6 +15,11 @@
   display: flex;
   gap: 50px;
   animation: scroll-left 20s linear infinite; /* Slower scrolling animation */
+  will-change: transform; /* Optimizes performance for the animation */
+}
+
+.testimonial-container:hover .testimonial {
+  animation-play-state: paused; /* Pause the scroll animation on hover */
 }
 
 .testimonial-content {

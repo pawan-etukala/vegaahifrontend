@@ -20,7 +20,10 @@ import {
  
 } from "react-icons/fa"; // Additional icons for courses
 import "../css/Trainings.css";
-
+import { FaCircle } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { FaTrophy } from "react-icons/fa";
+import { FaMedal } from "react-icons/fa";
 const Trainings = () => {
   return (
     <div className="container mt-4 col-12">
@@ -29,32 +32,32 @@ const Trainings = () => {
           <Col>
             <Nav variant="pills" className="justify-content-center">
               <Nav.Item>
-                <Nav.Link eventKey="level1">
-                  <FaBeer style={{ color: "#FF6347" }} />{" "}
+                <Nav.Link eventKey="level1" >
+                <FaCircle style={{ color: "#FF6347", }} />{" "}
                   <span className="ms-2">Level 1 Programming</span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="level2">
-                  <FaGamepad style={{ color: "#32CD32" }} />{" "}
+                  <FaMountain  style={{ color: "#32CD32" }} />{" "}
                   <span className="ms-2">Level 2 Programming</span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="level3">
-                  <FaHeart style={{ color: "#FF1493" }} />{" "}
+                  <FaStar style={{ color: "#FF1493" }} />{" "}
                   <span className="ms-2"> Level-3 Designing</span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="level4">
-                  <FaMusic style={{ color: "#1E90FF" }} />{" "}
+                  <FaTrophy style={{ color: "#1E90FF" }} />{" "}
                   <span className="ms-2">Level 4 Testing</span>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="level5">
-                  <FaMountain style={{ color: "#228B22" }} />{" "}
+                  <FaMedal style={{ color: "#228B22" }} />{" "}
                   <span className="ms-2">Level 5 Cloud Technology</span>
                 </Nav.Link>
               </Nav.Item>
@@ -66,99 +69,99 @@ const Trainings = () => {
             <Tab.Content>
               <Tab.Pane eventKey="level1">
                 <div className="level-box">
-                    <h5>
-                      <FaBeer style={{ color: "#FF6347" }} /> Level 1 Content
-                    </h5>
-                  <div className="container mt-5">
-                    <h2 className="text-center mb-4 text-primary">
-                      Basic Programming Courses
-                    </h2>
-
-                    {/* Row 1 */}
-                    <div className="row mb-4">
-                      <div className="col-12">
-                        <div className="p-4 border rounded shadow-sm">
-                          <h5 className="fw-bold">
-                            <FaDesktop
-                              style={{ color: "#FFD700" }}
-                              className="me-2"
-                            />{" "}
-                            Basic Computer + C Language
-                          </h5>
-                          <p>
-                            Learn the fundamentals of computers and C
-                            programming in one comprehensive course.
-                          </p>
-                          <a
-                            href="https://drive.google.com/file/d/12mYS11PfFwCRiOIP_zag9Egdkgo_cx5i/view?usp=sharing"
-                            className="btn btn-primary"
-                            aria-label="View Basic Computer and C Language course content"
-                          >
-                            View Course Content
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Row 2 */}
-                    <div className="row mb-4">
-                      <div className="col-12">
-                        <div className="p-4 border rounded shadow-sm">
-                          <h5 className="fw-bold">
-                            <FaCode
-                              style={{ color: "#8A2BE2" }}
-                              className="me-2"
-                            />{" "}
-                            C Language + Data Structures
-                          </h5>
-                          <p>
-                            Explore deeper into C programming while mastering
-                            Data Structures for efficient coding.
-                          </p>
-                          <a
-                            href="#"
-                            className="btn btn-primary"
-                            aria-label="View C Language and Data Structures course content"
-                          >
-                            View Course Content
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Row 3 */}
-                    <div className="row mb-4">
-                      <div className="col-12">
-                        <div className="p-4 border rounded shadow-sm">
-                          <h5 className="fw-bold">
-                            <FaCogs
-                              style={{ color: "#FF4500" }}
-                              className="me-2"
-                            />{" "}
-                            C Language + DS + C++ + AL (Algorithm)
-                          </h5>
-                          <p>
-                            Take your skills to the next level by learning C,
-                            Data Structures, C++, and Algorithms.
-                          </p>
-                          <a
-                            href="#"
-                            className="btn btn-primary"
-                            aria-label="View C Language, Data Structures, C++, and Algorithm course content"
-                          >
-                            View Course Content
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                                    <h5>
+                                      <FaCircle style={{ color: "#FF6347" }} /> Level 1 Content
+                                    </h5>
+                                  <div className="container mt-5">
+                                    <h2 className="text-center mb-4 text-primary">
+                                      Basic Programming Courses
+                                    </h2>
+                
+                                    {/* Row 1 */}
+                                    <div className="row mb-4">
+                                      <div className="col-12">
+                                        <div className="p-4 border rounded shadow-sm">
+                                          <h5 className="fw-bold">
+                                            <FaDesktop
+                                              style={{ color: "#FFD700" }}
+                                              className="me-2"
+                                            />{" "}
+                                            Basic Computer + C Language
+                                          </h5>
+                                          <p>
+                                            Learn the fundamentals of computers and C
+                                            programming in one comprehensive course.
+                                          </p>
+                                          <a
+                                            href="https://drive.google.com/file/d/12mYS11PfFwCRiOIP_zag9Egdkgo_cx5i/view?usp=sharing"
+                                            className="btn btn-primary"
+                                            aria-label="View Basic Computer and C Language course content"
+                                          >
+                                            View Course Content
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                
+                                    {/* Row 2 */}
+                                    <div className="row mb-4" id="level2">
+                                      <div className="col-12">
+                                        <div className="p-4 border rounded shadow-sm">
+                                          <h5 className="fw-bold">
+                                            <FaCode
+                                              style={{ color: "#8A2BE2" }}
+                                              className="me-2"
+                                            />{" "}
+                                            C Language + Data Structures
+                                          </h5>
+                                          <p>
+                                            Explore deeper into C programming while mastering
+                                            Data Structures for efficient coding.
+                                          </p>
+                                          <a
+                                            href="#"
+                                            className="btn btn-primary"
+                                            aria-label="View C Language and Data Structures course content"
+                                          >
+                                            View Course Content
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                
+                                    {/* Row 3 */}
+                                    <div className="row mb-4">
+                                      <div className="col-12">
+                                        <div className="p-4 border rounded shadow-sm">
+                                          <h5 className="fw-bold">
+                                            <FaCogs
+                                              style={{ color: "#FF4500" }}
+                                              className="me-2"
+                                            />{" "}
+                                            C Language + DS + C++ + AL (Algorithm)
+                                          </h5>
+                                          <p>
+                                            Take your skills to the next level by learning C,
+                                            Data Structures, C++, and Algorithms.
+                                          </p>
+                                          <a
+                                            href="#"
+                                            className="btn btn-primary"
+                                            aria-label="View C Language, Data Structures, C++, and Algorithm course content"
+                                          >
+                                            View Course Content
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
               </Tab.Pane>
 
               <Tab.Pane eventKey="level2">
       <div className="level-box">
         <h5>
-          <FaGamepad style={{ color: "#32CD32" }} /> Level 2 Content
+          <FaMountain style={{ color: "#32CD32" }} /> Level 2 Content
         </h5>
         <div className="container mt-5">
           <h2 className="text-center mb-4 text-primary">Programming Courses</h2>
@@ -350,7 +353,7 @@ const Trainings = () => {
               <Tab.Pane eventKey="level3">
                 <div className="level-box">
                   <h5>
-                    <FaHeart style={{ color: "#FF1493" }} /> Level 3 Content
+                    <FaStar style={{ color: "#FF1493" }} /> Level 3 Content
                   </h5>
                    <div className="container mt-5">
                         <h2 className="text-center text-primary mb-4">Designing Courses</h2>
@@ -453,7 +456,7 @@ const Trainings = () => {
               <Tab.Pane eventKey="level4">
                 <div className="level-box">
                   <h5>
-                    <FaMusic style={{ color: "#1E90FF" }} /> Level 4 Content
+                    <FaTrophy style={{ color: "#1E90FF" }} /> Level 4 Content
                   </h5>
                    <div className="container mt-5">
                         <h2 className="text-center text-primary mb-4">Testing Courses</h2>
@@ -509,10 +512,10 @@ const Trainings = () => {
               </Tab.Pane>
 
               {/* Level 5 Content */}
-              <Tab.Pane eventKey="level5">
+              <Tab.Pane eventKey="level5" id="level5">
                 <div className="level-box">
                   <h5>
-                    <FaMountain style={{ color: "#228B22" }} /> Level 5 Content
+                    <FaMedal style={{ color: "#228B22" }} /> Level 5 Content
                   </h5>
                 <div className="container mt-5">
                       <h2 className="text-center text-primary mb-4">Cloud Technology Courses</h2>
