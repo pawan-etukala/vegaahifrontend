@@ -17,9 +17,9 @@ const Level1 = () => {
        
 
         {/* Level 1 Content Title */}
-        <h5 className="fw-bold m-3">
+        <h3 className="fw-bold m-3">
           <FaCircle style={{ color: '#FF6347' }} /> Level 1 Content
-        </h5>
+        </h3>
         <button
           onClick={handleBackClick}
           className="btn btn-light d-flex align-items-center justify-content-center m-3"
@@ -43,9 +43,9 @@ const Level1 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaDesktop style={{ color: '#FFD700' }} className="me-2" /> Basic Computer + C Language
-              </h5>
+              </h3>
               <p>
                 Learn the fundamentals of computers and C programming in one comprehensive course.
               </p>
@@ -64,9 +64,9 @@ const Level1 = () => {
         <div className="row mb-4" id="level2">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaCode style={{ color: '#8A2BE2' }} className="me-2" /> C Language + Data Structures
-              </h5>
+              </h3>
               <p>
                 Explore deeper into C programming while mastering Data Structures for efficient coding.
               </p>
@@ -85,9 +85,9 @@ const Level1 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaCogs style={{ color: '#FF4500' }} className="me-2" /> C Language + DS + C++ + AL (Algorithm)
-              </h5>
+              </h3>
               <p>
                 Take your skills to the next level by learning C, Data Structures, C++, and Algorithms.
               </p>

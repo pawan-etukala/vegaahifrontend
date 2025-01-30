@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaJsSquare, FaCss3Alt, FaNode, FaAngular, FaVuejs, FaPython, FaHtml5, FaBootstrap, FaGithub, FaAws, FaJava, FaLinux, FaDatabase, FaBrain, FaShieldAlt } from 'react-icons/fa'; // Import icons from React Icons
+import { FaReact, FaJsSquare, FaCss3Alt,  FaAngular, FaVuejs, FaPython, FaHtml5, FaBootstrap, FaAws, FaJava,  FaDatabase, FaBrain, FaShieldAlt } from 'react-icons/fa'; // Import icons from React Icons
 import { DiPostgresql } from 'react-icons/di'; // PostgreSQL Icon
 import { IoLogoNodejs } from 'react-icons/io'; // Node.js icon
 import { SiMongodb, SiKotlin, SiDart, SiFlutter, SiPhp, SiTypescript } from 'react-icons/si'; // MongoDB, Kotlin, Dart, Flutter, PHP, TypeScript icons
@@ -226,7 +226,7 @@ const Tutorials = () => {
                 {tutorial.icon}
               </div>
               <div>
-                <h5>{tutorial.title}</h5>
+                <h3>{tutorial.title}</h3>
                 <p>{tutorial.description}</p>
                 <a href={tutorial.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Read Tutorial

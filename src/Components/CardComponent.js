@@ -69,7 +69,7 @@ const CardComponent = () => {
                 }}
               />
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{card.title}</h5>
+                <h3 className="card-title">{card.title}</h3>
                 <p className="card-text">{card.text}</p>
                 <button onClick={() => handleCardClick(card.path)} className="btn btn-primary mt-auto">
                   See more...

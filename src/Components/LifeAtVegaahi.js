@@ -28,7 +28,7 @@ const LifeAtVegaahi = () => {
               className="img-fluid rounded mb-3"
               style={{ maxHeight: "200px", objectFit: "cover" }}
             />
-            <h5 className="text-primary">Work-Life Balance</h5>
+            <h3 className="text-primary">Work-Life Balance</h3>
             <p>
               At Vegaahi, we understand the importance of balancing work and personal life. 
               Flexible working hours and wellness programs ensure our employees stay productive and happy.
@@ -50,7 +50,7 @@ const LifeAtVegaahi = () => {
               className="img-fluid rounded mb-3"
               style={{ maxHeight: "200px", objectFit: "cover" }}
             />
-            <h5 className="text-success">Our Culture</h5>
+            <h3 className="text-success">Our Culture</h3>
             <p>
               Vegaahi fosters a collaborative and inclusive work environment where 
               creativity and innovation thrive. We celebrate diversity and value each individual's contribution.

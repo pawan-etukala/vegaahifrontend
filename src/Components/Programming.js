@@ -9,7 +9,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Core Java</h5>
+            <h3 className="fw-bold">Core Java</h3>
             <p>
               Learn the fundamentals of Java programming language and core concepts.
             </p>
@@ -28,7 +28,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Java (Core Java + Advanced Java) + (HTML5 + CSS3 + JS + SQL) + Real-Time Project (Internship Certificate)</h5>
+            <h3 className="fw-bold">Java (Core Java + Advanced Java) + (HTML5 + CSS3 + JS + SQL) + Real-Time Project (Internship Certificate)</h3>
             <p>
               A comprehensive course combining Java, web technologies, and real-world project experience.
             </p>
@@ -47,7 +47,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Java + Spring Boot + Full Stack (with Placement)</h5>
+            <h3 className="fw-bold">Java + Spring Boot + Full Stack (with Placement)</h3>
             <p>
               Master Java and Spring Boot framework with a full-stack project, including placement assistance.
             </p>
@@ -66,7 +66,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Java + Spring Boot + Full Stack (without Placement)</h5>
+            <h3 className="fw-bold">Java + Spring Boot + Full Stack (without Placement)</h3>
             <p>
               Learn Java and Spring Boot with a full-stack project but without placement assistance.
             </p>
@@ -85,7 +85,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Basic Python</h5>
+            <h3 className="fw-bold">Basic Python</h3>
             <p>
               Learn the basics of Python programming, ideal for beginners.
             </p>
@@ -104,7 +104,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Basic Python + ML + DS</h5>
+            <h3 className="fw-bold">Basic Python + ML + DS</h3>
             <p>
               Dive deeper into Python and start with Machine Learning and Data Science.
             </p>
@@ -123,7 +123,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Python + TKINTER + ML</h5>
+            <h3 className="fw-bold">Python + TKINTER + ML</h3>
             <p>
               Learn Python, Tkinter for GUI development, and Machine Learning in this comprehensive course.
             </p>
@@ -142,7 +142,7 @@ const Programming = () => {
       <div className="row mb-4">
         <div className="col-12">
           <div className="p-4 border rounded shadow-sm">
-            <h5 className="fw-bold">Basic Python + TKINTER + DS + Framework (FLASK/DJANGO)</h5>
+            <h3 className="fw-bold">Basic Python + TKINTER + DS + Framework (FLASK/DJANGO)</h3>
             <p>
               This course covers Python, Tkinter, Data Science, and web frameworks like Flask/Django.
             </p>

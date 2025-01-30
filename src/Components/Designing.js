@@ -13,9 +13,9 @@ const Designing = () => {
           <div className="border p-4 rounded shadow-sm">
             <div className="d-flex align-items-center mb-3">
               <FaLaptopCode style={{ color: "#FFD700" }} className="me-3" />
-              <h5 className="mb-0">
+              <h3 className="mb-0">
                 Web Designing & Web Development (HTML5, CSS3, JS, Bootstrap)
-              </h5>
+              </h3>
             </div>
             <p>
               Learn web designing and development with hands-on experience in HTML5, CSS3, JS, and Bootstrap.

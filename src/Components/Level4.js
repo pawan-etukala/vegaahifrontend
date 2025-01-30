@@ -14,9 +14,9 @@ const Level4 = () => {
       <div className="d-flex align-items-center mb-4">
               
            
-      <h5 className='fw-bold m-3'>
+      <h3 className='fw-bold m-3'>
                          <FaTrophy style={{ color: "#1E90FF" }} /> Level 4 Content
-                       </h5>
+                       </h3>
              
               {/* Back Button */}
               <button
@@ -43,9 +43,9 @@ const Level4 = () => {
                                  <div className="border p-4 rounded shadow-sm">
                                    <div className="d-flex align-items-center mb-3">
                                      <FaDesktop style={{ color: "#FFD700" }} className="me-3" />
-                                     <h5 className="mb-0">
+                                     <h3 className="mb-0">
                                        Manual Testing
-                                     </h5>
+                                     </h3>
                                    </div>
                                    <p>
                                      Learn the fundamentals of manual testing, including test case design and execution techniques.
@@ -65,9 +65,9 @@ const Level4 = () => {
                                  <div className="border p-4 rounded shadow-sm">
                                    <div className="d-flex align-items-center mb-3">
                                      <FaCode style={{ color: "#8A2BE2" }} className="me-3" />
-                                     <h5 className="mb-0">
+                                     <h3 className="mb-0">
                                        Manual Testing + Automation Testing (Selenium)
-                                     </h5>
+                                     </h3>
                                    </div>
                                    <p>
                                      Master both manual testing and automation testing using Selenium for web application testing.

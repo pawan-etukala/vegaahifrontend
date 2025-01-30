@@ -61,7 +61,7 @@ const Updates = () => {
         {updates.map((update, index) => (
           <div key={index} className="list-group-item list-group-item-action mb-3 shadow-sm rounded">
             <div>
-              <h5>{update.title}</h5>
+              <h3>{update.title}</h3>
               <p>{update.description}</p>
               <small>{update.date}</small>
             </div>

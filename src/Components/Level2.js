@@ -16,9 +16,9 @@ const Level2 = () => {
         
 
         {/* Level 2 Content Title */}
-        <h5 className="fw-bold m-3" >
+        <h3 className="fw-bold m-3" >
           <FaMountain style={{ color: '#32CD32' }} /> Level 2 Content
-        </h5>
+        </h3>
         {/* Back Button */}
         <button
           onClick={handleBackClick}
@@ -42,10 +42,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaJava style={{ color: '#FF8C00' }} className="me-2" />
                 Core Java
-              </h5>
+              </h3>
               <p>
                 Learn the fundamentals of Java programming language and core
                 concepts.
@@ -65,10 +65,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaJava style={{ color: '#FF8C00' }} className="me-2" />
                 Java (Core Java + Advanced Java) + (HTML5 + CSS3 + JS + SQL) + Real-Time Project (Internship Certificate)
-              </h5>
+              </h3>
               <p>
                 A comprehensive course combining Java, web technologies, and
                 real-world project experience.
@@ -88,10 +88,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaJava style={{ color: '#FF8C00' }} className="me-2" />
                 Java + Spring Boot + Full Stack (with Placement)
-              </h5>
+              </h3>
               <p>
                 Master Java and Spring Boot framework with a full-stack
                 project, including placement assistance.
@@ -111,10 +111,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaJava style={{ color: '#FF8C00' }} className="me-2" />
                 Java + Spring Boot + Full Stack (without Placement)
-              </h5>
+              </h3>
               <p>
                 Learn Java and Spring Boot with a full-stack project but
                 without placement assistance.
@@ -134,10 +134,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaPython style={{ color: '#FF6347' }} className="me-2" />
                 Basic Python
-              </h5>
+              </h3>
               <p>Learn the basics of Python programming, ideal for beginners.</p>
               <a
                 href="#"
@@ -154,10 +154,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaPython style={{ color: '#FF6347' }} className="me-2" />
                 Basic Python + ML + DS
-              </h5>
+              </h3>
               <p>
                 Dive deeper into Python and start with Machine Learning and
                 Data Science.
@@ -177,10 +177,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaPython style={{ color: '#FF6347' }} className="me-2" />
                 Python + TKINTER + ML
-              </h5>
+              </h3>
               <p>
                 Learn Python, Tkinter for GUI development, and Machine
                 Learning in this comprehensive course.
@@ -200,10 +200,10 @@ const Level2 = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div className="p-4 border rounded shadow-sm">
-              <h5 className="fw-bold">
+              <h3 className="fw-bold">
                 <FaPython style={{ color: '#FF6347' }} className="me-2" />
                 Basic Python + TKINTER + DS + Framework (FLASK/DJANGO)
-              </h5>
+              </h3>
               <p>
                 This course covers Python, Tkinter, Data Science, and web
                 frameworks like Flask/Django.

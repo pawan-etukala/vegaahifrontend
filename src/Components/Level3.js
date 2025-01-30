@@ -12,9 +12,9 @@ const Level3 = () => {
         <div>
             <div >
                                <div className="d-flex align-items-center mb-4">
-                              <h5 className='fw-bold m-3'>
+                              <h3 className='fw-bold m-3'>
                                 <FaStar style={{ color: "#FF1493" }} /> Level 3 Content
-                              </h5>
+                              </h3>
                                       
                               
                                     {/* Level 3 Content Title */}
@@ -43,9 +43,9 @@ const Level3 = () => {
                                         <div className="border p-4 rounded shadow-sm">
                                           <div className="d-flex align-items-center mb-3">
                                             <FaLaptopCode style={{ color: "#FFD700" }} className="me-3" />
-                                            <h5 className="mb-0">
+                                            <h3 className="mb-0">
                                               Web Designing & Web Development (HTML5, CSS3, JS, Bootstrap)
-                                            </h5>
+                                            </h3>
                                           </div>
                                           <p>
                                             Learn web designing and development with hands-on experience in HTML5, CSS3, JS, and Bootstrap.
@@ -65,9 +65,9 @@ const Level3 = () => {
                                         <div className="border p-4 rounded shadow-sm">
                                           <div className="d-flex align-items-center mb-3">
                                             <FaDesktop style={{ color: "#8A2BE2" }} className="me-3" />
-                                            <h5 className="mb-0">
+                                            <h3 className="mb-0">
                                               Web Designing (HTML5 + CSS3 + Bootstrap + JS)
-                                            </h5>
+                                            </h3>
                                           </div>
                                           <p>
                                             Master web designing using HTML5, CSS3, Bootstrap, and JavaScript to create responsive websites.
@@ -87,9 +87,9 @@ const Level3 = () => {
                                         <div className="border p-4 rounded shadow-sm">
                                           <div className="d-flex align-items-center mb-3">
                                             <FaCode style={{ color: "#FF4500" }} className="me-3" />
-                                            <h5 className="mb-0">
+                                            <h3 className="mb-0">
                                               Entry Level MEAN Stack (HTML5 + CSS3 + Bootstrap + JS + Basic React)
-                                            </h5>
+                                            </h3>
                                           </div>
                                           <p>
                                             Learn the basics of the MEAN stack (MongoDB, Express, Angular, Node) and React for frontend development.
@@ -109,9 +109,9 @@ const Level3 = () => {
                                         <div className="border p-4 rounded shadow-sm">
                                           <div className="d-flex align-items-center mb-3">
                                             <FaProjectDiagram style={{ color: "#32CD32" }} className="me-3" />
-                                            <h5 className="mb-0">
+                                            <h3 className="mb-0">
                                               Advanced Level MEAN Stack (HTML5 + CSS3 + Bootstrap + JS + React Framework + Project)
-                                            </h5>
+                                            </h3>
                                           </div>
                                           <p>
                                             Take your development skills to the next level by mastering the full MEAN stack and React framework.

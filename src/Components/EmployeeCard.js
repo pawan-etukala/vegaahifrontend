@@ -14,7 +14,7 @@ const EmployeeCard = (props) => {
             className="card-img"
           />
           <div className="card-body">
-  <h5 className="card-title">{title}</h5>
+  <h3 className="card-title">{title}</h3>
   <h6 class="card-subtitle mb-2 ">{name}</h6>
   <p class="card-text">{description}</p>
   
@@ -24,7 +24,7 @@ const EmployeeCard = (props) => {
         </div>
         <div className="card-back">
           <div className="card-body text-center">
-            <h5 className="card-title" style={{color:'white'}}>{name}</h5>
+            <h3 className="card-title" style={{color:'white'}}>{name}</h3>
             <p className="card-text" style={{color:'white'}}>
              {about}
             </p>

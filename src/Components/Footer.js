@@ -9,7 +9,7 @@ const Footer = () => {
           
           {/* Course List Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Course List</h5>
+            <h3>Course List</h3>
             <ul className="list-unstyled">
               <li><Link to="/trainings" className="text-white"onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Training</Link></li>
               <li><Link to="/acadamicprojects" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Academic Projects</Link></li>
@@ -20,7 +20,7 @@ const Footer = () => {
             
           {/* Service Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Service</h5>
+            <h3>Service</h3>
             <ul className="list-unstyled">
               <li><Link to="/testimonaials"  className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Educational Clients</Link></li>
               <li><Link to="/developmentclients" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Development Clients</Link></li>
@@ -29,7 +29,7 @@ const Footer = () => {
           
           {/* Blog Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Blog</h5>
+            <h3>Blog</h3>
             <ul className="list-unstyled">
               <li><Link to="/latestnews" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Latest News</Link></li>
               <li><Link to="/updates" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Updates</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Careers Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Careers</h5>
+            <h3>Careers</h3>
             <ul className="list-unstyled">
               <li><Link to="/jobs" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Job Openings</Link></li>
               <li><Link to="/internships" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Internship Opportunities</Link></li>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Address Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Address</h5>
+            <h3>Address</h3>
             <address>
               Sai Pooja Complex, 1st Floor<br />
               Beside Big-C, Kishanpura<br />
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Location Column */}
           <div className="col-12 col-md-2 mb-4 mb-md-0">
-            <h5>Location</h5>
+            <h3>Location</h3>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.296200126762!2d79.55611577464066!3d18.011452284528698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f7d0d2f8115%3A0xcac6d50449738e5b!2sVEGAAHI%20IT%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1731644668362!5m2!1sen!2sin"
               width="100%" height="200" style={{ border: 0 }} allowFullScreen="" loading="lazy" 

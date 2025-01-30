@@ -12,9 +12,9 @@ const Level5 = () => {
     <div>
       <div>
         <div className="d-flex align-items-center mb-4">
-        <h5 className='fw-bold m-3'>
+        <h3 className='fw-bold m-3'>
                           <FaMedal style={{ color: "#228B22" }} /> Level 5 Content
-                        </h5>
+                        </h3>
         
                 
                 <button
@@ -43,7 +43,7 @@ const Level5 = () => {
                                 <div className="border p-4 rounded shadow-sm">
                                   <div className="d-flex align-items-center mb-3">
                                     <FaCloud style={{ color: "#1E90FF" }} className="me-3" />
-                                    <h5 className="mb-0">Cloud Technology</h5>
+                                    <h3 className="mb-0">Cloud Technology</h3>
                                   </div>
                                   <p>Learn the fundamentals of cloud computing and how it can be leveraged in modern businesses.</p>
                                   <a
@@ -61,7 +61,7 @@ const Level5 = () => {
                                 <div className="border p-4 rounded shadow-sm">
                                   <div className="d-flex align-items-center mb-3">
                                     <FaAws style={{ color: "#FF9900" }} className="me-3" />
-                                    <h5 className="mb-0">AWS + Cloud</h5>
+                                    <h3 className="mb-0">AWS + Cloud</h3>
                                   </div>
                                   <p>Get hands-on experience with Amazon Web Services (AWS) and its integration with cloud technologies.</p>
                                   <a
@@ -79,7 +79,7 @@ const Level5 = () => {
                                 <div className="border p-4 rounded shadow-sm">
                                   <div className="d-flex align-items-center mb-3">
                                     <FaAws style={{ color: "#FF9900" }} className="me-3" />
-                                    <h5 className="mb-0">AWS (DevOps + Kubernetes)</h5>
+                                    <h3 className="mb-0">AWS (DevOps + Kubernetes)</h3>
                                   </div>
                                   <p>Learn AWS tools along with DevOps and Kubernetes for effective cloud infrastructure management.</p>
                                   <a
@@ -97,7 +97,7 @@ const Level5 = () => {
                                 <div className="border p-4 rounded shadow-sm">
                                   <div className="d-flex align-items-center mb-3">
                                     <FaNetworkWired style={{ color: "#32CD32" }} className="me-3" />
-                                    <h5 className="mb-0">Networking</h5>
+                                    <h3 className="mb-0">Networking</h3>
                                   </div>
                                   <p>Understand the key principles of computer networking and how they apply to cloud environments.</p>
                                   <a
@@ -115,7 +115,7 @@ const Level5 = () => {
                                 <div className="border p-4 rounded shadow-sm">
                                   <div className="d-flex align-items-center mb-3">
                                     <FaServer style={{ color: "#8B0000" }} className="me-3" />
-                                    <h5 className="mb-0">Servers (Windows & Linux)</h5>
+                                    <h3 className="mb-0">Servers (Windows & Linux)</h3>
                                   </div>
                                   <p>Learn how to manage and configure both Windows and Linux servers in a cloud environment.</p>
                                   <a

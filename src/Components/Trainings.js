@@ -69,9 +69,9 @@ const Trainings = () => {
             <Tab.Content>
               <Tab.Pane eventKey="level1">
                 <div className="level-box">
-                                    <h5>
+                                    <h3>
                                       <FaCircle style={{ color: "#FF6347" }} /> Level 1 Content
-                                    </h5>
+                                    </h3>
                                   <div className="container mt-5">
                                     <h2 className="text-center mb-4 text-primary">
                                       Basic Programming Courses
@@ -81,13 +81,13 @@ const Trainings = () => {
                                     <div className="row mb-4">
                                       <div className="col-12">
                                         <div className="p-4 border rounded shadow-sm">
-                                          <h5 className="fw-bold">
+                                          <h3 className="fw-bold">
                                             <FaDesktop
                                               style={{ color: "#FFD700" }}
                                               className="me-2"
                                             />{" "}
                                             Basic Computer + C Language
-                                          </h5>
+                                          </h3>
                                           <p>
                                             Learn the fundamentals of computers and C
                                             programming in one comprehensive course.
@@ -107,13 +107,13 @@ const Trainings = () => {
                                     <div className="row mb-4" id="level2">
                                       <div className="col-12">
                                         <div className="p-4 border rounded shadow-sm">
-                                          <h5 className="fw-bold">
+                                          <h3 className="fw-bold">
                                             <FaCode
                                               style={{ color: "#8A2BE2" }}
                                               className="me-2"
                                             />{" "}
                                             C Language + Data Structures
-                                          </h5>
+                                          </h3>
                                           <p>
                                             Explore deeper into C programming while mastering
                                             Data Structures for efficient coding.
@@ -133,13 +133,13 @@ const Trainings = () => {
                                     <div className="row mb-4">
                                       <div className="col-12">
                                         <div className="p-4 border rounded shadow-sm">
-                                          <h5 className="fw-bold">
+                                          <h3 className="fw-bold">
                                             <FaCogs
                                               style={{ color: "#FF4500" }}
                                               className="me-2"
                                             />{" "}
                                             C Language + DS + C++ + AL (Algorithm)
-                                          </h5>
+                                          </h3>
                                           <p>
                                             Take your skills to the next level by learning C,
                                             Data Structures, C++, and Algorithms.
@@ -160,9 +160,9 @@ const Trainings = () => {
 
               <Tab.Pane eventKey="level2">
       <div className="level-box">
-        <h5>
+        <h3>
           <FaMountain style={{ color: "#32CD32" }} /> Level 2 Content
-        </h5>
+        </h3>
         <div className="container mt-5">
           <h2 className="text-center mb-4 text-primary">Programming Courses</h2>
 
@@ -170,10 +170,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaJava style={{ color: "#FF8C00" }} className="me-2" />
                   Core Java
-                </h5>
+                </h3>
                 <p>
                   Learn the fundamentals of Java programming language and core
                   concepts.
@@ -193,10 +193,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaJava style={{ color: "#FF8C00" }} className="me-2" />
                   Java (Core Java + Advanced Java) + (HTML5 + CSS3 + JS + SQL) + Real-Time Project (Internship Certificate)
-                </h5>
+                </h3>
                 <p>
                   A comprehensive course combining Java, web technologies, and
                   real-world project experience.
@@ -216,10 +216,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaJava style={{ color: "#FF8C00" }} className="me-2" />
                   Java + Spring Boot + Full Stack (with Placement)
-                </h5>
+                </h3>
                 <p>
                   Master Java and Spring Boot framework with a full-stack
                   project, including placement assistance.
@@ -239,10 +239,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaJava style={{ color: "#FF8C00" }} className="me-2" />
                   Java + Spring Boot + Full Stack (without Placement)
-                </h5>
+                </h3>
                 <p>
                   Learn Java and Spring Boot with a full-stack project but
                   without placement assistance.
@@ -262,10 +262,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaPython style={{ color: "#FF6347" }} className="me-2" />
                   Basic Python
-                </h5>
+                </h3>
                 <p>Learn the basics of Python programming, ideal for beginners.</p>
                 <a
                   href="#"
@@ -282,10 +282,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaPython style={{ color: "#FF6347" }} className="me-2" />
                   Basic Python + ML + DS
-                </h5>
+                </h3>
                 <p>
                   Dive deeper into Python and start with Machine Learning and
                   Data Science.
@@ -305,10 +305,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaPython style={{ color: "#FF6347" }} className="me-2" />
                   Python + TKINTER + ML
-                </h5>
+                </h3>
                 <p>
                   Learn Python, Tkinter for GUI development, and Machine
                   Learning in this comprehensive course.
@@ -328,10 +328,10 @@ const Trainings = () => {
           <div className="row mb-4">
             <div className="col-12">
               <div className="p-4 border rounded shadow-sm">
-                <h5 className="fw-bold">
+                <h3 className="fw-bold">
                   <FaPython style={{ color: "#FF6347" }} className="me-2" />
                   Basic Python + TKINTER + DS + Framework (FLASK/DJANGO)
-                </h5>
+                </h3>
                 <p>
                   This course covers Python, Tkinter, Data Science, and web
                   frameworks like Flask/Django.
@@ -352,9 +352,9 @@ const Trainings = () => {
               {/* Level 3 Content */}
               <Tab.Pane eventKey="level3">
                 <div className="level-box">
-                  <h5>
+                  <h3>
                     <FaStar style={{ color: "#FF1493" }} /> Level 3 Content
-                  </h5>
+                  </h3>
                    <div className="container mt-5">
                         <h2 className="text-center text-primary mb-4">Designing Courses</h2>
                   
@@ -365,9 +365,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaLaptopCode style={{ color: "#FFD700" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Web Designing & Web Development (HTML5, CSS3, JS, Bootstrap)
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Learn web designing and development with hands-on experience in HTML5, CSS3, JS, and Bootstrap.
@@ -387,9 +387,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaDesktop style={{ color: "#8A2BE2" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Web Designing (HTML5 + CSS3 + Bootstrap + JS)
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Master web designing using HTML5, CSS3, Bootstrap, and JavaScript to create responsive websites.
@@ -409,9 +409,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaCode style={{ color: "#FF4500" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Entry Level MEAN Stack (HTML5 + CSS3 + Bootstrap + JS + Basic React)
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Learn the basics of the MEAN stack (MongoDB, Express, Angular, Node) and React for frontend development.
@@ -431,9 +431,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaProjectDiagram style={{ color: "#32CD32" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Advanced Level MEAN Stack (HTML5 + CSS3 + Bootstrap + JS + React Framework + Project)
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Take your development skills to the next level by mastering the full MEAN stack and React framework.
@@ -455,9 +455,9 @@ const Trainings = () => {
               {/* Level 4 Content */}
               <Tab.Pane eventKey="level4">
                 <div className="level-box">
-                  <h5>
+                  <h3>
                     <FaTrophy style={{ color: "#1E90FF" }} /> Level 4 Content
-                  </h5>
+                  </h3>
                    <div className="container mt-5">
                         <h2 className="text-center text-primary mb-4">Testing Courses</h2>
                   
@@ -468,9 +468,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaDesktop style={{ color: "#FFD700" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Manual Testing
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Learn the fundamentals of manual testing, including test case design and execution techniques.
@@ -490,9 +490,9 @@ const Trainings = () => {
                             <div className="border p-4 rounded shadow-sm">
                               <div className="d-flex align-items-center mb-3">
                                 <FaCode style={{ color: "#8A2BE2" }} className="me-3" />
-                                <h5 className="mb-0">
+                                <h3 className="mb-0">
                                   Manual Testing + Automation Testing (Selenium)
-                                </h5>
+                                </h3>
                               </div>
                               <p>
                                 Master both manual testing and automation testing using Selenium for web application testing.
@@ -514,9 +514,9 @@ const Trainings = () => {
               {/* Level 5 Content */}
               <Tab.Pane eventKey="level5" id="level5">
                 <div className="level-box">
-                  <h5>
+                  <h3>
                     <FaMedal style={{ color: "#228B22" }} /> Level 5 Content
-                  </h5>
+                  </h3>
                 <div className="container mt-5">
                       <h2 className="text-center text-primary mb-4">Cloud Technology Courses</h2>
                 
@@ -527,7 +527,7 @@ const Trainings = () => {
                           <div className="border p-4 rounded shadow-sm">
                             <div className="d-flex align-items-center mb-3">
                               <FaCloud style={{ color: "#1E90FF" }} className="me-3" />
-                              <h5 className="mb-0">Cloud Technology</h5>
+                              <h3 className="mb-0">Cloud Technology</h3>
                             </div>
                             <p>Learn the fundamentals of cloud computing and how it can be leveraged in modern businesses.</p>
                             <a
@@ -545,7 +545,7 @@ const Trainings = () => {
                           <div className="border p-4 rounded shadow-sm">
                             <div className="d-flex align-items-center mb-3">
                               <FaAws style={{ color: "#FF9900" }} className="me-3" />
-                              <h5 className="mb-0">AWS + Cloud</h5>
+                              <h3 className="mb-0">AWS + Cloud</h3>
                             </div>
                             <p>Get hands-on experience with Amazon Web Services (AWS) and its integration with cloud technologies.</p>
                             <a
@@ -563,7 +563,7 @@ const Trainings = () => {
                           <div className="border p-4 rounded shadow-sm">
                             <div className="d-flex align-items-center mb-3">
                               <FaAws style={{ color: "#FF9900" }} className="me-3" />
-                              <h5 className="mb-0">AWS (DevOps + Kubernetes)</h5>
+                              <h3 className="mb-0">AWS (DevOps + Kubernetes)</h3>
                             </div>
                             <p>Learn AWS tools along with DevOps and Kubernetes for effective cloud infrastructure management.</p>
                             <a
@@ -581,7 +581,7 @@ const Trainings = () => {
                           <div className="border p-4 rounded shadow-sm">
                             <div className="d-flex align-items-center mb-3">
                               <FaNetworkWired style={{ color: "#32CD32" }} className="me-3" />
-                              <h5 className="mb-0">Networking</h5>
+                              <h3 className="mb-0">Networking</h3>
                             </div>
                             <p>Understand the key principles of computer networking and how they apply to cloud environments.</p>
                             <a
@@ -599,7 +599,7 @@ const Trainings = () => {
                           <div className="border p-4 rounded shadow-sm">
                             <div className="d-flex align-items-center mb-3">
                               <FaServer style={{ color: "#8B0000" }} className="me-3" />
-                              <h5 className="mb-0">Servers (Windows & Linux)</h5>
+                              <h3 className="mb-0">Servers (Windows & Linux)</h3>
                             </div>
                             <p>Learn how to manage and configure both Windows and Linux servers in a cloud environment.</p>
                             <a

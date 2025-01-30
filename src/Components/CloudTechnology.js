@@ -13,7 +13,7 @@ const CloudTechnology = () => {
           <div className="border p-4 rounded shadow-sm">
             <div className="d-flex align-items-center mb-3">
               <FaCloud style={{ color: "#1E90FF" }} className="me-3" />
-              <h5 className="mb-0">Cloud Technology</h5>
+              <h3 className="mb-0">Cloud Technology</h3>
             </div>
             <p>Learn the fundamentals of cloud computing and how it can be leveraged in modern businesses.</p>
             <a

@@ -8,7 +8,7 @@ import Programming from "./Components/Programming";
 import Testing from "./Components/Testing";
 import Designing from "./Components/Designing";
 import CloudTechnology from "./Components/CloudTechnology";
-import CardComponent from "./Components/CardComponent";
+
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import ContactUs from "./Components/ContactUs";
@@ -21,13 +21,13 @@ import LifeAtVegaahi from "./Components/LifeAtVegaahi";
 import Carriers from "./Components/Carriers";
 import EducationalClinets from "./Components/EducationalClinets";
 import Developmentclients from "./Components/DevelopmentClients";
-import AcadamicProjectCard from "./Components/AcadamicProjectCard";
+
 import Jobs from "./Components/Jobs";
 import Apply from "./Components/Apply";
 import Publications from "./Components/Publications";
 import LatestNews from "./Components/LatestNews";
 import Updates from "./Components/Updates";
-import Turorials from "./Components/Tutorials";
+
 import Tutorials from "./Components/Tutorials";
 import Testimonial from "./Components/Testimonial";
 import Level1 from "./Components/Level1";
@@ -35,6 +35,15 @@ import Level2 from "./Components/Level2";
 import Level3 from "./Components/Level3";
 import Level4 from "./Components/Level4";
 import Level5 from "./Components/Level5";
+import Login from "./Components/Admin/Login";
+
+import HrDashboardRoutes from "./Components/Admin/HrDashboardRoutes";
+import DashboardRoutes from "./Components/Admin/DashboardRoutes";
+import ManagerDashboardRoutes from "./Components/Admin/ManagerDashboardRoutes";
+
+
+
+
 
 
 // import CarouselComponent from "./Components/CarouselComponent";
@@ -77,6 +86,11 @@ function App() {
           <Route path="level4" element={<Level4/>} />
           <Route path="level5" element={<Level5/>} />
           <Route path="/apply/:jobId" element={<Apply />} />
+          <Route path="login" element={<Login/>} />
+          <Route path="/hr/*" element={<HrDashboardRoutes/>} /> 
+          <Route path="/admin/*" element={<DashboardRoutes/>} /> 
+          <Route path="/manager/*" element={<ManagerDashboardRoutes/>} /> 
+          {/* Dashboard is the main page for admin */}
         </Routes>
         
        
