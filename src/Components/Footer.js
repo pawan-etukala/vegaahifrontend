@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="col-12 col-md-2 mb-4 mb-md-0">
             <h3>Course List</h3>
             <ul className="list-unstyled">
-              <li><Link to="/trainings" className="text-white"onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Training</Link></li>
+              <li><Link to="/trainings" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Training</Link></li>
               <li><Link to="/acadamicprojects" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Academic Projects</Link></li>
-              <li><Link to="/publications" className="text-white"onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Publications</Link></li>
+              <li><Link to="/publications" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Publications</Link></li>
               <li><Link to="/" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> Go to Home page</Link></li>
             </ul>
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="col-12 col-md-2 mb-4 mb-md-0">
             <h3>Service</h3>
             <ul className="list-unstyled">
-              <li><Link to="/testimonaials"  className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Educational Clients</Link></li>
+              <li><Link to="/testimonaials" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Educational Clients</Link></li>
               <li><Link to="/developmentclients" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Development Clients</Link></li>
             </ul>
           </div>
@@ -43,7 +43,6 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li><Link to="/jobs" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Job Openings</Link></li>
               <li><Link to="/internships" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Internship Opportunities</Link></li>
-              {/* <li><Link to="/apply" className="text-white">Apply Now</Link></li> */}
               <li><Link to="/lifeatvegaahi" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Life at Vegaahi</Link></li>
             </ul>
           </div>
@@ -55,9 +54,9 @@ const Footer = () => {
               Sai Pooja Complex, 1st Floor<br />
               Beside Big-C, Kishanpura<br />
               Hanamkonda, Warangal, Telangana 506001<br />
-              Email: <a href="mailto:vegaahiit@gmail.com" className="text-white">vegaahiit@gmail.com</a>
-              , <a href="mailto:vegaahiitpvt.ltd@vegaahi.com" className="text-white">vegaahiitpvt.ltd@vegaahi.com</a><br/>
-              Phone: <a href="tel:9494579988" className="text-white">9494579988</a><br></br>
+              Email: <a href="mailto:vegaahiit@gmail.com" className="text-white">vegaahiit@gmail.com</a>,
+              <a href="mailto:vegaahiitpvt.ltd@vegaahi.com" className="text-white">vegaahiitpvt.ltd@vegaahi.com</a><br/>
+              Phone: <a href="tel:9494579988" className="text-white">9494579988</a>,
               <a href="tel:9494569988" className="text-white">9494569988</a>
             </address>
           </div>
@@ -74,6 +73,19 @@ const Footer = () => {
         </div>
 
         <hr className="bg-white my-4" />
+
+        {/* Social Media Links */}
+        <div className="text-center mb-3">
+          <a href="https://www.facebook.com/share/15vUY7mb8f/" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <i className="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sandeep-akkapelli-36a8841a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <i className="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/share/15vUY7mb8f/" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <i className="fab fa-facebook fa-2x"></i>
+          </a>
+        </div>
 
         {/* Copyright */}
         <div className="text-center">
