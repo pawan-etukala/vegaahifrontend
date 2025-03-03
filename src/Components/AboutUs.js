@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaPencilAlt, FaChartBar, FaDatabase } from "react-icons/fa";
 import mission from "../Assests/Mission.jpeg";
 import vision from "../Assests/vision.jpeg";
 import pawan from "../Assests/pawan3.jpg";
@@ -12,6 +11,7 @@ import Ramesh from "../Assests/ramesh.jpg";
 // import slide1 from "../Assests/slide1.jpeg";
 import lavanya from "../Assests/lavanya.jpg";
 import sandeep from "../Assests//sandeep.jpg";
+import ganesh from "../Assests/ganesh.jpg";
 import EmployeeCard from "./EmployeeCard";
 const AboutUs = () => {
   // Array of employee data
@@ -88,6 +88,15 @@ const AboutUs = () => {
         '"With a keen eye for Design and Dev an eagerness to innovate, my journey as a fresh-faced software engineer is driven by passion and creativity."',
       about:
         "As a budding software engineer,I mix my knack for design with a zeal for innovation. Armed with Figma, React.js, and Spring Boot, I navigate the coding cosmos, dreaming up creative solutions and chuckling at my own bugs. Ready to turn fresh ideas into reality, one quirky line of code at a time.",
+    },
+    {
+      image: ganesh,
+      title: "Python Developer",
+      name: "Ganesh Netha",
+      description:
+        'A budding Python developer is new to programming, eager to learn and build practical applications using Python.',
+      about:
+        "Experienced in building scalable backend services with Node.js, Express, and MongoDB. Loves solving complex problems and integrating APIs.",
     },
   ];
 
@@ -185,16 +194,16 @@ Through collaboration and innovation, we aim to help businesses achieve their go
   );
 };
 
-const FeatureItem = ({ icon, title, description }) => (
-  <div className="feature-item d-flex mb-3">
-    <div className="feature-icon bg-white text-primary rounded-circle p-3 me-3">
-      {icon}
-    </div>
-    <div>
-      <h5>{title}</h5>
-      <p>{description}</p>
-    </div>
-  </div>
-);
+// const FeatureItem = ({ icon, title, description }) => (
+//   <div className="feature-item d-flex mb-3">
+//     <div className="feature-icon bg-white text-primary rounded-circle p-3 me-3">
+//       {icon}
+//     </div>
+//     <div>
+//       <h5>{title}</h5>
+//       <p>{description}</p>
+//     </div>
+//   </div>
+// );
 
 export default AboutUs;

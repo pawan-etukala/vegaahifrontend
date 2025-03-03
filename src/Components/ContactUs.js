@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "../css/ContactUs.css";
 import Swal from "sweetalert";
-import axios from "axios";
+// import axios from "axios";
+import api from "../api";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    txtName: "",
-    txtEmail: "",
-    txtPhone: "",
-    txtMsg: "",
+    name: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -23,30 +24,18 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
 
-    // Web3Forms endpoint and Access Key
-    const endpoint = "https://api.web3forms.com/submit";
-    const accessKey = "0c5d4a8f-1122-4a77-909a-5e8b9dad6b13"; // Replace with your actual access key
-
     try {
-      const response = await axios.post(endpoint, {
-        access_key: accessKey,
-        name: formData.txtName,
-        email: formData.txtEmail,
-        phone: formData.txtPhone,
-        message: formData.txtMsg,
-        subject: "New Contact Form Submission",
-      });
+      const response = await api.post("/contactus", formData);
 
       if (response.status === 200) {
         Swal("Success!", "Your message has been sent successfully.", "success");
         setFormData({
-          txtName: "",
-          txtEmail: "",
-          txtPhone: "",
-          txtMsg: "",
+          name: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
         });
       } else {
         throw new Error("Failed to send message");
@@ -75,10 +64,10 @@ const ContactUs = () => {
               <div className="form-group">
                 <input
                   type="text"
-                  name="txtName"
+                  name="name"
                   className="form-control"
                   placeholder="Your Name *"
-                  value={formData.txtName}
+                  value={formData.name}
                   onChange={handleInputChange}
                   required
                 />
@@ -86,21 +75,21 @@ const ContactUs = () => {
               <div className="form-group">
                 <input
                   type="email"
-                  name="txtEmail"
+                  name="email"
                   className="form-control"
                   placeholder="Your Email *"
-                  value={formData.txtEmail}
+                  value={formData.email}
                   onChange={handleInputChange}
                   required
                 />
               </div>
               <div className="form-group">
                 <input
-                  type="text"
-                  name="txtPhone"
+                  type="number"
+                  name="phoneNumber"
                   className="form-control"
                   placeholder="Your Phone Number *"
-                  value={formData.txtPhone}
+                  value={formData.phoneNumber}
                   onChange={handleInputChange}
                   required
                 />
@@ -114,11 +103,11 @@ const ContactUs = () => {
             <div className="col-md-6">
               <div className="form-group">
                 <textarea
-                  name="txtMsg"
+                  name="message"
                   className="form-control"
                   placeholder="Your Message *"
                   style={{ width: "100%", height: "150px" }}
-                  value={formData.txtMsg}
+                  value={formData.message}
                   onChange={handleInputChange}
                   required
                 ></textarea>

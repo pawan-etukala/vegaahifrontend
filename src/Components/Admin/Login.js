@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Correct Font Awesome import
 import "../../css/AdminLogin.css"; // Custom CSS
 import login from "../../Assests/login.jpg"; // Login image import
+import api from "../../api";
 
 const Login = () => {
   const [role, setRole] = useState("");
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async (e) => {
@@ -17,10 +18,10 @@ const Login = () => {
     // Basic validation
     if (
       role.trim() === "" ||
-      username.trim() === "" ||
+      email.trim() === "" ||
       password.trim() === ""
     ) {
-      toast.error("Role, username, and password are required!", {
+      toast.error("Role, email, and password are required!", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -34,9 +35,9 @@ const Login = () => {
 
     try {
       // API call for login
-      const response = await axios.post("", {
+      const response = await api.post("/auth/login", {
         role,
-        username,
+        email,
         password,
       });
 
@@ -54,11 +55,11 @@ const Login = () => {
 
       // Clear form
       setRole("");
-      setUsername("");
+      setEmail("");
       setPassword("");
     } catch (error) {
       // Handle login error
-      toast.error("Invalid role, username, or password!", {
+      toast.error("Invalid role, email, or password!", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -70,7 +71,7 @@ const Login = () => {
 
       // Clear form
       setRole("");
-      setUsername("");
+      setEmail("");
       setPassword("");
     }
   };
@@ -89,7 +90,7 @@ const Login = () => {
           <div className="login-form">
             <h2 className="mb-4"> Login</h2>
             <p className="text-muted">
-              Please select your role and enter your username and password to
+              Please select your role and enter your email and password to
               login.
             </p>
             <form onSubmit={handleLogin}>
@@ -109,16 +110,16 @@ const Login = () => {
                   <option value="Manager">Manager</option>
                   <option value="HR">HR</option>
                   <option value="Employee">Employee</option>
-                  <option value="Intern">Intern</option>
+                  <option value="intern">Intern</option>
                 </select>
               </div>
               <div className="form-group mb-3">
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
-                  placeholder="Username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
