@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../css/ContactUs.css";
 import Swal from "sweetalert";
-// import axios from "axios";
 import api from "../api";
 
 const ContactUs = () => {
@@ -13,6 +12,8 @@ const ContactUs = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const successSound = new Audio("/sounds/success.mp3"); // Ensure this path is correct
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,6 +31,7 @@ const ContactUs = () => {
       const response = await api.post("/contactus", formData);
 
       if (response.status === 200) {
+        successSound.play(); // Play success sound
         Swal("Success!", "Your message has been sent successfully.", "success");
         setFormData({
           name: "",

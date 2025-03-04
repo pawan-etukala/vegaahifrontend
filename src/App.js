@@ -40,6 +40,7 @@ import Login from "./Components/Admin/Login";
 import HrDashboardRoutes from "./Components/Admin/HrDashboardRoutes";
 import DashboardRoutes from "./Components/Admin/DashboardRoutes";
 import ManagerDashboardRoutes from "./Components/Admin/ManagerDashboardRoutes";
+import AddBlog from "./Components/Admin/AddBlog";
 
 
 
@@ -85,11 +86,13 @@ function App() {
           <Route path="level3" element={<Level3/>} />
           <Route path="level4" element={<Level4/>} />
           <Route path="level5" element={<Level5/>} />
+          <Route path="addblog" element={<AddBlog/>} />
           <Route path="/apply/:jobId" element={<Apply />} />
           <Route path="login" element={<Login/>} />
           <Route path="/hr/*" element={<HrDashboardRoutes/>} /> 
           <Route path="/admin/*" element={<DashboardRoutes/>} /> 
           <Route path="/manager/*" element={<ManagerDashboardRoutes/>} /> 
+
           {/* Dashboard is the main page for admin */}
         </Routes>
         

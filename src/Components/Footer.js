@@ -54,7 +54,7 @@ const Footer = () => {
               Sai Pooja Complex, 1st Floor<br />
               Beside Big-C, Kishanpura<br />
               Hanamkonda, Warangal, Telangana 506001<br />
-              Email: <a href="mailto:vegaahiit@gmail.com" className="text-white">vegaahiit@gmail.com</a>,
+              Email: <a href="mailto:vegaahiit@gmail.com" className="text-white">vegaahiit@gmail.com</a>,<br/>
               <a href="mailto:vegaahiitpvt.ltd@vegaahi.com" className="text-white">vegaahiitpvt.ltd@vegaahi.com</a><br/>
               Phone: <a href="tel:9494579988" className="text-white">9494579988</a>,
               <a href="tel:9494569988" className="text-white">9494569988</a>
