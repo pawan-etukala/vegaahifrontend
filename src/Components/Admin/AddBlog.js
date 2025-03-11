@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -20,6 +20,8 @@ const modules = {
 
 const AddBlog = () => {
   const [blog, setBlog] = useState({ title: "", content: "", imageFile: null });
+  const [editorKey, setEditorKey] = useState(0); // Reset ReactQuill editor
+  const fileInputRef = useRef(null); // Reference to file input
 
   const validateForm = () => {
     if (!blog.title.trim()) {
@@ -66,7 +68,12 @@ const AddBlog = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
       Swal.fire({ icon: "success", title: "Success!", text: "Blog added successfully!" });
+
+      // Reset form fields
       setBlog({ title: "", content: "", imageFile: null });
+      setEditorKey(prevKey => prevKey + 1); // Reset ReactQuill editor
+      if (fileInputRef.current) fileInputRef.current.value = ""; // Clear file input
+
     } catch (error) {
       Swal.fire({ icon: "error", title: "Oops!", text: "Failed to add blog. Please try again." });
     }
@@ -89,12 +96,17 @@ const AddBlog = () => {
 
         <Form.Group className="mb-3">
           <Form.Label className="fw-bold">Content</Form.Label>
-          <ReactQuill value={blog.content} onChange={handleContentChange} modules={modules} />
+          <ReactQuill
+            key={editorKey} // Ensures re-render on reset
+            value={blog.content}
+            onChange={handleContentChange}
+            modules={modules}
+          />
         </Form.Group>
 
         <Form.Group className="mb-3">
           <Form.Label className="fw-bold">Upload Image</Form.Label>
-          <Form.Control type="file" accept="image/*" onChange={handleImageChange} />
+          <Form.Control type="file" accept="image/*" onChange={handleImageChange} ref={fileInputRef} />
         </Form.Group>
 
         <Button variant="primary" type="submit" className="w-100 fw-bold">

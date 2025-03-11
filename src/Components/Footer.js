@@ -24,6 +24,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li><Link to="/testimonaials" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Educational Clients</Link></li>
               <li><Link to="/developmentclients" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Development Clients</Link></li>
+              <li><Link to="/privacypolicy" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Privacy Policy</Link></li>
             </ul>
           </div>
           
@@ -31,6 +32,7 @@ const Footer = () => {
           <div className="col-12 col-md-2 mb-4 mb-md-0">
             <h3>Blog</h3>
             <ul className="list-unstyled">
+              <li><Link to="/viewblogs" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>View Blogs</Link></li>
               <li><Link to="/latestnews" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Latest News</Link></li>
               <li><Link to="/updates" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Updates</Link></li>
               <li><Link to="/tutorials" className="text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Tutorials</Link></li>

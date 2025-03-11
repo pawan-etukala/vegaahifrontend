@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import { AuthProvider } from "./context/AuthContext";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import BasicProgramming from "./Components/BasicProgramming";
@@ -8,7 +8,6 @@ import Programming from "./Components/Programming";
 import Testing from "./Components/Testing";
 import Designing from "./Components/Designing";
 import CloudTechnology from "./Components/CloudTechnology";
-
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import ContactUs from "./Components/ContactUs";
@@ -35,13 +34,15 @@ import Level2 from "./Components/Level2";
 import Level3 from "./Components/Level3";
 import Level4 from "./Components/Level4";
 import Level5 from "./Components/Level5";
+import ViewBlogs from "./Components/ViewBlogs";
 import Login from "./Components/Admin/Login";
-
 import HrDashboardRoutes from "./Components/Admin/HrDashboardRoutes";
 import DashboardRoutes from "./Components/Admin/DashboardRoutes";
+import EmployeeDashboardRoutes from "./Components/Admin/EmployeeDashboardRoutes";
 import ManagerDashboardRoutes from "./Components/Admin/ManagerDashboardRoutes";
 import AddBlog from "./Components/Admin/AddBlog";
-
+import ProtectedRoute from "../src/Components/ProtectedRoutes";
+import PrivatePolicy from "./Components/PrivacyPolicy";
 
 
 
@@ -56,10 +57,13 @@ function App() {
   return (
     <Router>
       <div>
+      <AuthProvider>
         <Navbar />
-     
+       
         <Routes>
+        <Route path="login" element={<Login/>} />
         <Route path="/" element={<LandingPage />} />
+       
           <Route path="/programming" element={<Programming />} />
           <Route path="/basic-programming" element={<BasicProgramming />} />
           <Route path="/testing" element={<Testing />} />
@@ -73,6 +77,7 @@ function App() {
           <Route path="internships" element={<Internship/>} />
           <Route path="carries" element={<Carriers/>} />
           <Route path="lifeatvegaahi" element={<LifeAtVegaahi/>} />
+          <Route path="privacypolicy" element={<PrivatePolicy/>} />
           <Route path="educationalclients" element={<EducationalClinets/>} />
           <Route path="developmentclients" element={<Developmentclients/>} />
           <Route path="jobs" element={<Jobs/>} />
@@ -87,16 +92,39 @@ function App() {
           <Route path="level4" element={<Level4/>} />
           <Route path="level5" element={<Level5/>} />
           <Route path="addblog" element={<AddBlog/>} />
+          <Route path="viewblogs" element={<ViewBlogs/>} />
           <Route path="/apply/:jobId" element={<Apply />} />
-          <Route path="login" element={<Login/>} />
-          <Route path="/hr/*" element={<HrDashboardRoutes/>} /> 
+        
+          {/* <Route path="/hr/*" element={<HrDashboardRoutes/>} /> 
           <Route path="/admin/*" element={<DashboardRoutes/>} /> 
           <Route path="/manager/*" element={<ManagerDashboardRoutes/>} /> 
+          <Route path="/employee/*" element={<EmployeeDashboardRoutes/>} />  */}
 
+
+          <Route element={<ProtectedRoute allowedRoles={["md/boardofdirectors"]} />}>
+            <Route path="/admin/*" element={<DashboardRoutes />} />
+          </Route>
+
+          <Route element={<ProtectedRoute allowedRoles={["manager"]} />}>
+            <Route path="/manager/*" element={<ManagerDashboardRoutes />} />
+          </Route>
+
+          <Route element={<ProtectedRoute allowedRoles={["hr"]} />}>
+            <Route path="/hr/*" element={<HrDashboardRoutes />} />
+          </Route>
+
+          <Route element={<ProtectedRoute allowedRoles={["employee"]} />}>
+            <Route path="/employee/*" element={<EmployeeDashboardRoutes />} />
+          </Route>
+
+          {/* <Route element={<ProtectedRoute allowedRoles={["Intern"]} />}>
+            <Route path="/intern/*" element={<InternDashboard />} />
+          </Route> */}
+       
           {/* Dashboard is the main page for admin */}
         </Routes>
         
-       
+        </AuthProvider>
         <Footer/>
       </div>
     </Router>
